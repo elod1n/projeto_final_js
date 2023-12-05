@@ -29,7 +29,7 @@ function searchMonster(monsterName) {
           .then((monsterResponse) => {
             const monsterData = monsterResponse.data;
             const armorClass = monsterData.armor_class.length > 0 ? monsterData.armor_class[0].value : 'Não disponível';
-            const imageUrl = monsterData.image ? `https://www.dnd5eapi.co${monsterData.image}` : ''https://elod1n.github.io/projeto_final_js/images/not_found.png'';
+            const imageUrl = monsterData.image ? `https://www.dnd5eapi.co${monsterData.image}` : 'https://elod1n.github.io/projeto_final_js/images/not_found.png';
 
             monsterTableBody.innerHTML = `
               <tr>
